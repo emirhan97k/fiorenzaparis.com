@@ -14,24 +14,39 @@
     body {
       margin: 0;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       background-color: white;
       color: black;
       font-family: 'Sorts Mill Goudy', serif;
+      position: relative;
     }
     h1 {
       margin: 0;
       font-size: 3em;
     }
     p {
-      margin: -10px 0 0 0; /* move slightly upwards */
+      margin: -10px 0 0 0;
       font-size: 1.25em;
-      letter-spacing: 2px; /* add small spacing between letters */
+      letter-spacing: 2px;
     }
     .container {
       text-align: center;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .info-text {
+      position: absolute;
+      bottom: 10px;         /* very bottom of the page */
+      font-size: 0.75em;    /* very small */
+      color: #555;          /* subtle gray */
+      letter-spacing: 2px;  /* same spacing as FIORENZA text */
+      text-align: center;
+      font-family: 'Sorts Mill Goudy', serif; /* same font */
     }
   </style>
 </head>
@@ -39,6 +54,9 @@
   <div class="container">
     <h1>FIORENZA</h1>
     <p>PARIS</p>
+  </div>
+  <div class="info-text">
+    the golden flower is set to launch soon. Discover the essence of Fiorenza Paris.
   </div>
 </body>
 </html>
